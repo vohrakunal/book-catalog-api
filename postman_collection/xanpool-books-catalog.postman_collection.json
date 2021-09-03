@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "907a9c43-1cd8-4020-9596-801a395f7100",
+		"name": "xanpool-books-catalog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "books",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/books/getAllBooks",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"books",
+								"getAllBooks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBookById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/books/getBookById/613125be967883430c99af36",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"books",
+								"getBookById",
+								"613125be967883430c99af36"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addBook",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Book 1\",\n    \"year\": \"2011\",\n    \"description\" : \"all about Book 2\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/books/addBook",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"books",
+								"addBook"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addBooksInBatch",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"books\": [{\n  \"title\": \"Lucia\",\n  \"year\": 2007,\n  \"description\": \"Advanced well-modulated policy\"\n}, {\n  \"title\": \"Night Court\",\n  \"year\": 2006,\n  \"description\": \"User-centric fresh-thinking initiative\"\n}, {\n  \"title\": \"Love the Hard Way\",\n  \"year\": 2003,\n  \"description\": \"Synergistic 24/7 customer loyalty\"\n}, {\n  \"title\": \"Arthur and the Invisibles\",\n  \"year\": 2004,\n  \"description\": \"Horizontal upward-trending structure\"\n}, {\n  \"title\": \"Live!\",\n  \"year\": 2006,\n  \"description\": \"Implemented global product\"\n}, {\n  \"title\": \"I Knew It Was You: Rediscovering John Cazale\",\n  \"year\": 2010,\n  \"description\": \"Visionary discrete model\"\n}, {\n  \"title\": \"Block Party (a.k.a. Dave Chappelle's Block Party)\",\n  \"year\": 2006,\n  \"description\": \"Managed holistic utilisation\"\n}, {\n  \"title\": \"Dandelion\",\n  \"year\": 2004,\n  \"description\": \"Total mission-critical matrices\"\n}, {\n  \"title\": \"Juha\",\n  \"year\": 1988,\n  \"description\": \"Horizontal fresh-thinking capability\"\n}, {\n  \"title\": \"Zaat\",\n  \"year\": 2000,\n  \"description\": \"Re-contextualized content-based artificial intelligence\"\n}, {\n  \"title\": \"Moonlight Murder\",\n  \"year\": 1997,\n  \"description\": \"Cross-group hybrid service-desk\"\n}, {\n  \"title\": \"Dancing Hawk, The (Tanczacy jastrzab)\",\n  \"year\": 2008,\n  \"description\": \"Persevering 4th generation open system\"\n}, {\n  \"title\": \"Wild Side\",\n  \"year\": 1993,\n  \"description\": \"Fundamental tangible toolset\"\n}, {\n  \"title\": \"King's Faith\",\n  \"year\": 1987,\n  \"description\": \"Adaptive system-worthy project\"\n}, {\n  \"title\": \"Bionicle 3: Web of Shadows\",\n  \"year\": 1992,\n  \"description\": \"Persistent eco-centric knowledge base\"\n}, {\n  \"title\": \"One-Way Ticket to Mombasa (Menolippu Mombasaan)\",\n  \"year\": 2011,\n  \"description\": \"Phased client-driven throughput\"\n}, {\n  \"title\": \"Hills Have Eyes, The\",\n  \"year\": 2010,\n  \"description\": \"Proactive maximized strategy\"\n}, {\n  \"title\": \"Public Eye, The (Follow Me!)\",\n  \"year\": 1998,\n  \"description\": \"Profit-focused 4th generation portal\"\n}, {\n  \"title\": \"How Do You Know\",\n  \"year\": 2010,\n  \"description\": \"Grass-roots holistic architecture\"\n}, {\n  \"title\": \"Captivated\",\n  \"year\": 2004,\n  \"description\": \"De-engineered explicit frame\"\n}, {\n  \"title\": \"Ski Patrol\",\n  \"year\": 2004,\n  \"description\": \"Function-based web-enabled middleware\"\n}, {\n  \"title\": \"Highlander: The Search for Vengeance\",\n  \"year\": 1993,\n  \"description\": \"Centralized homogeneous policy\"\n}, {\n  \"title\": \"Battle in Seattle\",\n  \"year\": 1996,\n  \"description\": \"Monitored context-sensitive orchestration\"\n}, {\n  \"title\": \"Beauty and the Beast: The Enchanted Christmas\",\n  \"year\": 1993,\n  \"description\": \"Sharable systemic application\"\n}, {\n  \"title\": \"Wild Orchid\",\n  \"year\": 1994,\n  \"description\": \"Enterprise-wide motivating access\"\n}, {\n  \"title\": \"The Lunchbox\",\n  \"year\": 1964,\n  \"description\": \"Open-architected cohesive implementation\"\n}, {\n  \"title\": \"5 Against the House\",\n  \"year\": 2009,\n  \"description\": \"Secured heuristic help-desk\"\n}, {\n  \"title\": \"Odds Against Tomorrow\",\n  \"year\": 1996,\n  \"description\": \"Reactive executive archive\"\n}, {\n  \"title\": \"U.S. Seals\",\n  \"year\": 2001,\n  \"description\": \"Future-proofed reciprocal collaboration\"\n}, {\n  \"title\": \"We the Party\",\n  \"year\": 1981,\n  \"description\": \"Versatile real-time paradigm\"\n}, {\n  \"title\": \"Trials of Muhammad Ali, The\",\n  \"year\": 1997,\n  \"description\": \"Inverse scalable encoding\"\n}, {\n  \"title\": \"Jackie Brown\",\n  \"year\": 1999,\n  \"description\": \"Managed 6th generation website\"\n}, {\n  \"title\": \"Maîtresse (Mistress)\",\n  \"year\": 2006,\n  \"description\": \"Cross-group optimal Graphical User Interface\"\n}, {\n  \"title\": \"Strangers with Candy\",\n  \"year\": 1997,\n  \"description\": \"Centralized reciprocal knowledge user\"\n}, {\n  \"title\": \"Stay\",\n  \"year\": 1992,\n  \"description\": \"Advanced content-based functionalities\"\n}, {\n  \"title\": \"Wheel of Time\",\n  \"year\": 1994,\n  \"description\": \"De-engineered zero defect workforce\"\n}, {\n  \"title\": \"Erasing David\",\n  \"year\": 2012,\n  \"description\": \"Re-engineered high-level monitoring\"\n}, {\n  \"title\": \"Virtual Sexuality\",\n  \"year\": 1999,\n  \"description\": \"Virtual static workforce\"\n}, {\n  \"title\": \"Babysitter Wanted\",\n  \"year\": 2003,\n  \"description\": \"Enhanced background budgetary management\"\n}, {\n  \"title\": \"Cruise, The\",\n  \"year\": 1991,\n  \"description\": \"Down-sized regional flexibility\"\n}, {\n  \"title\": \"Bee Season\",\n  \"year\": 2000,\n  \"description\": \"Quality-focused needs-based portal\"\n}, {\n  \"title\": \"Space Jam\",\n  \"year\": 1998,\n  \"description\": \"Horizontal client-driven open architecture\"\n}, {\n  \"title\": \"Original Gangstas\",\n  \"year\": 2006,\n  \"description\": \"Customizable demand-driven parallelism\"\n}, {\n  \"title\": \"No. 1 Ladies' Detective Agency, The\",\n  \"year\": 2004,\n  \"description\": \"Multi-channelled asymmetric database\"\n}, {\n  \"title\": \"Loved Ones, The\",\n  \"year\": 1999,\n  \"description\": \"Phased 24 hour product\"\n}, {\n  \"title\": \"Westfront 1918\",\n  \"year\": 1993,\n  \"description\": \"Reduced next generation definition\"\n}, {\n  \"title\": \"Wilder Napalm\",\n  \"year\": 2011,\n  \"description\": \"Progressive 5th generation challenge\"\n}, {\n  \"title\": \"Gagarin: First in Space\",\n  \"year\": 2009,\n  \"description\": \"Operative systematic algorithm\"\n}, {\n  \"title\": \"Killer Is Loose, The\",\n  \"year\": 2003,\n  \"description\": \"Future-proofed analyzing internet solution\"\n}, {\n  \"title\": \"Pleasure at Her Majesty's\",\n  \"year\": 2003,\n  \"description\": \"Digitized background complexity\"\n}, {\n  \"title\": \"Blue Chips\",\n  \"year\": 1998,\n  \"description\": \"Pre-emptive fresh-thinking Graphical User Interface\"\n}, {\n  \"title\": \"Home Alone 2: Lost in New York\",\n  \"year\": 2006,\n  \"description\": \"Profit-focused interactive customer loyalty\"\n}, {\n  \"title\": \"Stranger's Heart, A\",\n  \"year\": 2008,\n  \"description\": \"User-centric foreground productivity\"\n}, {\n  \"title\": \"Nightmare Factory\",\n  \"year\": 1994,\n  \"description\": \"Centralized encompassing implementation\"\n}, {\n  \"title\": \"Sahara\",\n  \"year\": 1988,\n  \"description\": \"Organized 4th generation Graphical User Interface\"\n}, {\n  \"title\": \"City of Men (Cidade dos Homens)\",\n  \"year\": 2000,\n  \"description\": \"Total impactful internet solution\"\n}, {\n  \"title\": \"Boogie (Boogie, el aceitoso)\",\n  \"year\": 1984,\n  \"description\": \"Sharable foreground budgetary management\"\n}, {\n  \"title\": \"Village People\",\n  \"year\": 1985,\n  \"description\": \"Public-key analyzing open architecture\"\n}, {\n  \"title\": \"Sucker, The (Corniaud, Le)\",\n  \"year\": 2003,\n  \"description\": \"Open-source needs-based hub\"\n}, {\n  \"title\": \"Simple Plan, A\",\n  \"year\": 2004,\n  \"description\": \"Right-sized tangible structure\"\n}, {\n  \"title\": \"Darwin Awards, The\",\n  \"year\": 2002,\n  \"description\": \"Re-engineered leading edge instruction set\"\n}, {\n  \"title\": \"Fate (Yazgi)\",\n  \"year\": 2002,\n  \"description\": \"Operative clear-thinking toolset\"\n}, {\n  \"title\": \"MacArthur\",\n  \"year\": 1992,\n  \"description\": \"Profound analyzing focus group\"\n}, {\n  \"title\": \"Justin Bieber's Believe\",\n  \"year\": 1998,\n  \"description\": \"Multi-lateral regional matrix\"\n}, {\n  \"title\": \"Agnes Browne\",\n  \"year\": 2000,\n  \"description\": \"Synergized value-added architecture\"\n}, {\n  \"title\": \"Twentynine Palms\",\n  \"year\": 2009,\n  \"description\": \"Profit-focused tangible hardware\"\n}, {\n  \"title\": \"Larks on a String (Skrivánci na niti)\",\n  \"year\": 2000,\n  \"description\": \"Focused holistic leverage\"\n}, {\n  \"title\": \"Miss You Can Do It\",\n  \"year\": 1997,\n  \"description\": \"Re-engineered demand-driven moratorium\"\n}, {\n  \"title\": \"Forgotten Silver\",\n  \"year\": 1994,\n  \"description\": \"Fully-configurable high-level throughput\"\n}, {\n  \"title\": \"Lana Turner... a Daughter's Memoir\",\n  \"year\": 2009,\n  \"description\": \"Re-contextualized actuating knowledge base\"\n}, {\n  \"title\": \"HellBent\",\n  \"year\": 1990,\n  \"description\": \"Team-oriented full-range internet solution\"\n}, {\n  \"title\": \"Love Is All You Need (Den skaldede frisør)\",\n  \"year\": 1994,\n  \"description\": \"Intuitive transitional intranet\"\n}, {\n  \"title\": \"Modern Affair, A\",\n  \"year\": 2007,\n  \"description\": \"Future-proofed homogeneous capacity\"\n}, {\n  \"title\": \"Fever Pitch\",\n  \"year\": 1994,\n  \"description\": \"Switchable maximized utilisation\"\n}, {\n  \"title\": \"Dollman vs. Demonic Toys\",\n  \"year\": 2011,\n  \"description\": \"Organic 3rd generation contingency\"\n}, {\n  \"title\": \"D3: The Mighty Ducks\",\n  \"year\": 2010,\n  \"description\": \"Digitized incremental groupware\"\n}, {\n  \"title\": \"Children of the Corn: Genesis\",\n  \"year\": 1962,\n  \"description\": \"Secured needs-based info-mediaries\"\n}, {\n  \"title\": \"Elvis and Me\",\n  \"year\": 1999,\n  \"description\": \"Reactive bottom-line infrastructure\"\n}, {\n  \"title\": \"World War II: When Lions Roared\",\n  \"year\": 1994,\n  \"description\": \"Distributed client-server collaboration\"\n}, {\n  \"title\": \"Liliom\",\n  \"year\": 2002,\n  \"description\": \"Upgradable object-oriented hardware\"\n}, {\n  \"title\": \"Paris\",\n  \"year\": 1992,\n  \"description\": \"Inverse holistic extranet\"\n}, {\n  \"title\": \"The Dark Horse\",\n  \"year\": 1996,\n  \"description\": \"Business-focused system-worthy moratorium\"\n}, {\n  \"title\": \"Sholay\",\n  \"year\": 2009,\n  \"description\": \"Innovative regional implementation\"\n}, {\n  \"title\": \"Alexander and the Terrible, Horrible, No Good, Very Bad Day\",\n  \"year\": 2006,\n  \"description\": \"Polarised discrete strategy\"\n}, {\n  \"title\": \"Ama lur (Tierra Madre)\",\n  \"year\": 1994,\n  \"description\": \"Fully-configurable responsive system engine\"\n}, {\n  \"title\": \"Russian Doll\",\n  \"year\": 2002,\n  \"description\": \"Networked 6th generation application\"\n}, {\n  \"title\": \"Vince Vaughn's Wild West Comedy Show: 30 Days & 30 Nights - Hollywood to the Heartland\",\n  \"year\": 1994,\n  \"description\": \"Customizable 3rd generation knowledge user\"\n}, {\n  \"title\": \"Switchback\",\n  \"year\": 2010,\n  \"description\": \"Phased motivating adapter\"\n}, {\n  \"title\": \"Alice in Wonderland\",\n  \"year\": 2003,\n  \"description\": \"Triple-buffered executive moderator\"\n}, {\n  \"title\": \"Strange Behaviour of Sexually Mature City Slickers at Mating Season, The (Das merkwürdige Verhalten geschlechtsreifer Großstädter zur Paarungszeit)\",\n  \"year\": 1998,\n  \"description\": \"Grass-roots empowering instruction set\"\n}, {\n  \"title\": \"12 Years a Slave\",\n  \"year\": 2012,\n  \"description\": \"Programmable impactful software\"\n}, {\n  \"title\": \"Eros (Men and Women) (Noite Vazia)\",\n  \"year\": 1991,\n  \"description\": \"Adaptive zero administration customer loyalty\"\n}, {\n  \"title\": \"Life of Another, The (La vie d'une autre)\",\n  \"year\": 1999,\n  \"description\": \"Grass-roots 6th generation attitude\"\n}, {\n  \"title\": \"Memoirs of a Geisha\",\n  \"year\": 2006,\n  \"description\": \"Ergonomic client-driven framework\"\n}, {\n  \"title\": \"Amateur\",\n  \"year\": 1994,\n  \"description\": \"Networked discrete concept\"\n}, {\n  \"title\": \"News from Home\",\n  \"year\": 2001,\n  \"description\": \"Adaptive multi-tasking customer loyalty\"\n}, {\n  \"title\": \"Lights Out\",\n  \"year\": 1993,\n  \"description\": \"Reactive 3rd generation concept\"\n}, {\n  \"title\": \"Johnny Stecchino\",\n  \"year\": 1996,\n  \"description\": \"Ergonomic explicit budgetary management\"\n}, {\n  \"title\": \"My Mom's New Boyfriend\",\n  \"year\": 2006,\n  \"description\": \"Enterprise-wide interactive budgetary management\"\n}, {\n  \"title\": \"Howling, The\",\n  \"year\": 1994,\n  \"description\": \"User-centric context-sensitive firmware\"\n}]}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/books/addBooksInBatch",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"books",
+								"addBooksInBatch"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseurl",
+			"value": "http://localhost:4000/api/v1"
+		}
+	]
+}
