@@ -5,8 +5,19 @@ export class BooksService {
         try {
             const allBooks = await BooksDao.getAllBooks();
             return allBooks
-        } catch (error) {
-            return error
+        } catch (e) {
+            console.log(e)
+            return false
+        }
+    }
+
+    static async getById(id: string){
+        try{
+            return await BooksDao.getBookById(id)
+        }
+        catch(e){
+            console.log(e)
+            return false
         }
     }
 
@@ -15,7 +26,8 @@ export class BooksService {
             return await BooksDao.addBook(title, year, description);
         }
         catch(e){
-            return e;
+            console.log(e)
+            return false
         }
     }
 
@@ -24,7 +36,8 @@ export class BooksService {
             return await BooksDao.getBookByTitle(title);
         }
         catch(e){
-            return e;
+            console.log(e)
+            return false
         }
     }
 }
