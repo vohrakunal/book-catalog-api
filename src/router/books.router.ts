@@ -12,9 +12,11 @@ export default class BooksRouter {
     public routes(): void {
         // GET
         this.router.get('/getAllBooks', BooksController.getAll);
+        this.router.get('/getBookById/:bookId', BooksController.getById);
         
         // Post
         this.router.post('/addBook', BooksController.addNew)
+        this.router.post('/addBooksInBatch', BooksController.addBatch)
 
         // Put
 
